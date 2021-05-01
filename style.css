@@ -1,6 +1,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
+body{background-color: rgb(49, 49, 49);}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
-header { display: flex; justify-content: center; align-items: center;}
+header { display: flex; justify-content: center; align-items: center; color: aliceblue;}
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
 section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: tomato; margin: 5px;}
 button { width: 180px; height: 90px; margin-top: 10px; margin-bottom: 10px;}

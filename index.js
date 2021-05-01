@@ -29,7 +29,7 @@ function btnHandler() {
     lastLi.appendChild(span2)
     span.innerText = 현재시간();
     const 처음과끝시간 = lastLi.textContent;
-    const 경과시간 = (처음과끝시간.slice(0, 2) - 처음과끝시간.slice(8, 10)) * 60 + (처음과끝시간.slice(3, 5) - 처음과끝시간.slice(11, 13));
+    const 경과시간 = (처음과끝시간.slice(8, 10) - 처음과끝시간.slice(0, 2)) * 60 + (처음과끝시간.slice(11, 13) - 처음과끝시간.slice(3, 5));
     span2.innerText = ` (${경과시간}')`;
   }
 }
