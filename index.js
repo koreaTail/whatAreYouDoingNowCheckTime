@@ -2,6 +2,12 @@ const btnSection = document.querySelector(".section-flex")
 const 시계위치 = document.querySelector(".시계위치")
 const p = 시계위치.querySelector("p")
 
+const 경과시간합모든아이 = document.querySelectorAll(".경과시간합")
+for (i = 0; i < 7; i++) {
+  경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
+}
+
+
 
 btnSection.addEventListener("submit", btnHandler)
 
@@ -31,6 +37,10 @@ function btnHandler() {
     const 처음과끝시간 = lastLi.textContent;
     const 경과시간 = (처음과끝시간.slice(8, 10) - 처음과끝시간.slice(0, 2)) * 60 + (처음과끝시간.slice(11, 13) - 처음과끝시간.slice(3, 5));
     span2.innerText = ` (${경과시간}')`;
+    const 경과시간합 = 해당섹션.querySelector(".경과시간합")
+    경과시간합.innerText = parseInt(경과시간합.innerText) + parseInt(경과시간);
+    // console.dir(해당섹션)
+    localStorage.setItem(해당섹션.id, 경과시간합.innerText)
   }
 }
 

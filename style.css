@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 body{background-color: rgb(49, 49, 49);}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
 header { display: flex; justify-content: center; align-items: center; color: aliceblue;}
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
-section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: tomato; margin: 5px;}
-button { width: 180px; height: 90px; margin-top: 10px; margin-bottom: 10px;}
+section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: tomato; margin: 5px; border-radius: 5px;}
+button { width: 180px; height: 90px; margin-top: 10px; margin-bottom: 10px; border-radius: 5px; border-style: none; background-color: white; color: black;}
+button:hover { cursor: pointer; background-color: rgb(219, 219, 219); color:rgb(88, 88, 88);}
 p { color: white; font-size: 17px;}
+.경과시간flex span { color: white;  font-size: 17px;}
 ol { color: white; font-size: 17px;}
-.시계위치 { color: white; background-color: red; margin-top: 20px;}
-.시계위치 p {font-size: 5em}
+.시계위치 { color: white;  margin-top: 20px; display: flex; justify-content: center; align-items: center;}
+.시계위치 p { background-color: #1e3799; font-size: 5em; border-radius: 10px; padding: 10px;}
 .선택됨 { background-color: #2980b9;}
+.경과시간flex { display: flex; justify-content: center; align-items: center;}
+
+
