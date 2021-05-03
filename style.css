@@ -3,7 +3,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 body{background-color: rgb(49, 49, 49);}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
-header { display: flex; justify-content: center; align-items: center; color: aliceblue;}
+header { display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: aliceblue; margin-bottom: 30px; font-size: 30px; margin-top: 30px;}
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
 section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: tomato; margin: 5px; border-radius: 5px;}
 button { width: 180px; height: 90px; margin-top: 10px; margin-bottom: 10px; border-radius: 5px; border-style: none; background-color: white; color: black;}
@@ -15,5 +15,5 @@ ol { color: white; font-size: 17px;}
 .시계위치 p { background-color: #1e3799; font-size: 5em; border-radius: 10px; padding: 10px;}
 .선택됨 { background-color: #2980b9;}
 .경과시간flex { display: flex; justify-content: center; align-items: center;}
-
+.초기화버튼 { width: 100px; height: 30px; background-color: rgb(24, 24, 24); color: white; margin-bottom: 30px;}
 

@@ -1,11 +1,22 @@
 const btnSection = document.querySelector(".section-flex")
 const 시계위치 = document.querySelector(".시계위치")
 const p = 시계위치.querySelector("p")
+const 초기화버튼 = document.querySelector(".초기화버튼")
 
 const 경과시간합모든아이 = document.querySelectorAll(".경과시간합")
 for (i = 0; i < 7; i++) {
   경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
 }
+
+초기화버튼.addEventListener("click", 초기화시키기)
+
+function 초기화시키기() {
+  for (i = 0; i < 7; i++) {
+    localStorage.setItem(i + 1, 0)
+    경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
+  }
+}
+
 
 
 
@@ -39,7 +50,6 @@ function btnHandler() {
     span2.innerText = ` (${경과시간}')`;
     const 경과시간합 = 해당섹션.querySelector(".경과시간합")
     경과시간합.innerText = parseInt(경과시간합.innerText) + parseInt(경과시간);
-    // console.dir(해당섹션)
     localStorage.setItem(해당섹션.id, 경과시간합.innerText)
   }
 }
