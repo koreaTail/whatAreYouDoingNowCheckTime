@@ -4,7 +4,17 @@ const p = 시계위치.querySelector("p")
 const 초기화버튼 = document.querySelector(".초기화버튼")
 
 const 경과시간합모든아이 = document.querySelectorAll(".경과시간합")
+
+// 로컬스토리지에 경과시간값이 없을 때, 초기값 0 넣어주기
+if (localStorage.getItem(1) == null) {
+  for (i = 0; i < 7; i++) {
+    localStorage.setItem(i + 1, 0)
+  }
+}
+
 for (i = 0; i < 7; i++) {
+
+
   경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
 }
 
