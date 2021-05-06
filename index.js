@@ -85,7 +85,7 @@ function 시계() {
   const 분 = new Date().getMinutes()
   const 초 = new Date().getSeconds()
 
-  p.innerText = `${시}: ${분}: ${초} `
+  p.innerText = `${시}:${(분 < 10) ? `0${분}` : 분}:${(초 < 10) ? `0${초}` : 초
+    } `
 }
-
 setInterval(시계, 1000)

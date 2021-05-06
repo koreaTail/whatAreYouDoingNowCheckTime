@@ -13,134 +13,141 @@
 
   <div class="all">
     <header>
-      <h1>YOU ARE WHAT YOU DO</h1>
-      <div>
+      <div class="header-left">
+        <h1>YOU ARE WHAT YOU DO</h1>
         <button class="초기화버튼">
-          <span>시작 및 초기화</span>
+          <span>재시작</span>
         </button>
       </div>
+      <div class="시계위치">
+        <p></p>
+      </div>
     </header>
-  </div>
-  <div class="시계위치">
-    <p></p>
-  </div>
-
-  <div class="section-flex">
-
-    <div>
-      <section id="1">
-        <form action="">
-          <button>
-            <span class="핵심키워드">코딩</span>
-          </button>
+    <main class="section-flex">
+      <div>
+        <section id="1">
+          <form action="">
+            <button>
+              <span class="핵심키워드">코딩</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="2">
+          <form action="">
+            <button>
+              <span class="핵심키워드">ㄱㅁㄷㅎ</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="3">
+          <form action="">
+            <button>
+              <span class="핵심키워드">독서</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="4">
+          <form action="">
+            <button>
+              <span class="핵심키워드">블로그</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="5">
+          <form action="">
+            <button>
+              <span class="핵심키워드">가족시간</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="6">
+          <form action="">
+            <button>
+              <span class="핵심키워드">개인정비</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+      <div>
+        <section id="7">
+          <form action="">
+            <button>
+              <span class="핵심키워드">쉼</span>
+            </button>
+          </form>
+          <div class="경과시간flex">
+            <p class="경과시간">경과시간</p>
+            <span>(</span>
+            <span class="경과시간합">0</span>
+            <span>')</span>
+          </div>
+          <ol class="경과시간표시부"></ol>
+        </section>
+      </div>
+    </main>
+    <section class="todo-part">
+      <div class="black-box">
+        <h4 class="title">To do list</h4>
+        <form class="js-toDoForm" action="">
+          <input class="js-toDoInput form-input" type="text" placeholder="Write a to do" />
         </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
+        <div class="flex">
+          <ul class="js-toDoList"></ul>
         </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="2">
-        <form action="">
-          <button>
-            <span class="핵심키워드">ㄱㅁㄷㅎ</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="3">
-        <form action="">
-          <button>
-            <span class="핵심키워드">독서</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="4">
-        <form action="">
-          <button>
-            <span class="핵심키워드">블로그</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="5">
-        <form action="">
-          <button>
-            <span class="핵심키워드">가족시간</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="6">
-        <form action="">
-          <button>
-            <span class="핵심키워드">개인정비</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-    <div>
-      <section id="7">
-        <form action="">
-          <button>
-            <span class="핵심키워드">쉼</span>
-          </button>
-        </form>
-        <div class="경과시간flex">
-          <p class="경과시간">경과시간</p>
-          <span>(</span>
-          <span class="경과시간합">0</span>
-          <span>')</span>
-        </div>
-        <ol class="경과시간표시부"></ol>
-      </section>
-    </div>
-
-
+      </div>
+    </section>
   </div>
 
 
@@ -148,6 +155,7 @@
 
 
   <script src="index.js"></script>
+  <script src="toDo.js"></script>
 </body>
 
 </html>
