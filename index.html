@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
     </header>
     <main class="section-flex">
       <div>
-        <section id="1">
+        <section id="코딩">
           <form action="">
             <button>
               <span class="핵심키워드">코딩</span>
@@ -41,7 +42,7 @@
         </section>
       </div>
       <div>
-        <section id="2">
+        <section id="구매대행">
           <form action="">
             <button>
               <span class="핵심키워드">ㄱㅁㄷㅎ</span>
@@ -57,7 +58,7 @@
         </section>
       </div>
       <div>
-        <section id="3">
+        <section id="독서">
           <form action="">
             <button>
               <span class="핵심키워드">독서</span>
@@ -73,7 +74,7 @@
         </section>
       </div>
       <div>
-        <section id="4">
+        <section id="블로그">
           <form action="">
             <button>
               <span class="핵심키워드">블로그</span>
@@ -89,7 +90,7 @@
         </section>
       </div>
       <div>
-        <section id="5">
+        <section id="가족시간">
           <form action="">
             <button>
               <span class="핵심키워드">가족시간</span>
@@ -105,7 +106,7 @@
         </section>
       </div>
       <div>
-        <section id="6">
+        <section id="개인정비">
           <form action="">
             <button>
               <span class="핵심키워드">개인정비</span>
@@ -121,7 +122,7 @@
         </section>
       </div>
       <div>
-        <section id="7">
+        <section id="쉼">
           <form action="">
             <button>
               <span class="핵심키워드">쉼</span>
@@ -137,17 +138,25 @@
         </section>
       </div>
     </main>
-    <section class="todo-part">
-      <div class="black-box">
-        <h4 class="title">To do list</h4>
-        <form class="js-toDoForm" action="">
-          <input class="js-toDoInput form-input" type="text" placeholder="Write a to do" />
-        </form>
-        <div class="flex">
-          <ul class="js-toDoList"></ul>
+    <div class="todo-and-memo-flex">
+      <section class="todo-part">
+        <div class="black-box">
+          <h4 class="title">To do list</h4>
+          <form class="js-toDoForm" action="">
+            <input class="js-toDoInput form-input" type="text" placeholder="Write a to do" />
+          </form>
+          <div class="flex">
+            <ul class="js-toDoList"></ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="memo-part">
+        <form action="">
+          <textarea name="" id="" cols="32" rows="21" placeholder="메모장입니다만.."></textarea>
+        </form>
+      </section>
+    </div>
+
   </div>
 
 
@@ -156,6 +165,7 @@
 
   <script src="index.js"></script>
   <script src="toDo.js"></script>
+  <script src="textarea.js"></script>
 </body>
 
 </html>

@@ -12,12 +12,12 @@ if (localStorage.getItem(1) == null) {
   }
 }
 
+// 불러오기
 for (i = 0; i < 7; i++) {
-
-
   경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
 }
 
+// 초기화시키기
 초기화버튼.addEventListener("click", 초기화시키기)
 
 function 초기화시키기() {
