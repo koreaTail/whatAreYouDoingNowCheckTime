@@ -6,28 +6,51 @@ const 초기화버튼 = document.querySelector(".초기화버튼")
 const 경과시간합모든아이 = document.querySelectorAll(".경과시간합")
 
 // 로컬스토리지에 경과시간값이 없을 때, 초기값 0 넣어주기
-if (localStorage.getItem(1) == null) {
-  for (i = 0; i < 7; i++) {
-    localStorage.setItem(i + 1, 0)
+function setupId(id) {
+  if (localStorage.getItem(id) == null) {
+    localStorage.setItem(id, 0)
   }
 }
 
+setupId('코딩');
+setupId('구매대행');
+setupId('독서');
+setupId('블로그');
+setupId('가족시간');
+setupId('개인정비');
+setupId('쉼');
+
 // 불러오기
-for (i = 0; i < 7; i++) {
-  경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
-}
+경과시간합모든아이[0].innerText = localStorage.getItem("코딩")
+경과시간합모든아이[1].innerText = localStorage.getItem("구매대행")
+경과시간합모든아이[2].innerText = localStorage.getItem("독서")
+경과시간합모든아이[3].innerText = localStorage.getItem("블로그")
+경과시간합모든아이[4].innerText = localStorage.getItem("가족시간")
+경과시간합모든아이[5].innerText = localStorage.getItem("개인정비")
+경과시간합모든아이[6].innerText = localStorage.getItem("쉼")
+
 
 // 초기화시키기
 초기화버튼.addEventListener("click", 초기화시키기)
 
 function 초기화시키기() {
-  for (i = 0; i < 7; i++) {
-    localStorage.setItem(i + 1, 0)
-    경과시간합모든아이[i].innerText = localStorage.getItem(i + 1)
-  }
+  localStorage.setItem("코딩", 0)
+  localStorage.setItem("구매대행", 0)
+  localStorage.setItem("독서", 0)
+  localStorage.setItem("블로그", 0)
+  localStorage.setItem("가족시간", 0)
+  localStorage.setItem("개인정비", 0)
+  localStorage.setItem("쉼", 0)
+
+  경과시간합모든아이[0].innerText = localStorage.getItem("코딩")
+  경과시간합모든아이[1].innerText = localStorage.getItem("구매대행")
+  경과시간합모든아이[2].innerText = localStorage.getItem("독서")
+  경과시간합모든아이[3].innerText = localStorage.getItem("블로그")
+  경과시간합모든아이[4].innerText = localStorage.getItem("가족시간")
+  경과시간합모든아이[5].innerText = localStorage.getItem("개인정비")
+  경과시간합모든아이[6].innerText = localStorage.getItem("쉼")
+
 }
-
-
 
 
 btnSection.addEventListener("submit", btnHandler)
