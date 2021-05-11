@@ -5,24 +5,28 @@ body{background-color: #030514;}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
 header { display: flex; justify-content: space-between; align-items: center; color: white; margin-bottom: 30px; font-size: 30px; margin-top: 30px; width: 77%;}
 .header-left { display: flex;}
+
+
+.day-style { display: flex; justify-content: space-around; align-items: center; width: 200px; height: 30px; color:white; background-color: #296CF2; border-radius: 3px; margin: 5px;}
+.day-style > span {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(255, 255, 255, 0.1); font-size: 12px;}
+.day-style > .sat {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(15, 56, 139, 0.7);}
+.day-style > .sun {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(255, 60, 0, 0.7);}
+
+
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 5px;}
 section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: #296CF2; margin: 5px; border-radius: 3px;}
 button { width: 180px; height: 50px; margin-top: 10px; margin-bottom: 10px; border-radius: 2px; border-style: none; background-color: black; color:white;}
 button:hover { cursor: pointer; background-color: white; color: black;}
 p { color: white; font-size: 17px;}
 .경과시간flex span { color: white;  font-size: 17px;}
-ol { color: white; font-size: 17px;}
+ol { color: white; font-size: 17px; list-style: none;}
 .시계위치 { color: white;  display: flex; justify-content: center; align-items: center;}
 .시계위치 p { font-size: 2em; border-radius: 3px; padding: 10px; color: white;}
 .선택됨 { background-color: #F08F41;}
 .경과시간flex { display: flex; justify-content: center; align-items: center;}
 .초기화버튼 { width: 40px; height: 20px; background-color: #296CF2; color: #ffffff; margin-left: 10px; margin-top: 35px; font-size: 10px;}
 
-.day-report { display: flex; justify-content: space-between; width: 76%; color:white; margin-bottom: 5px;}
-.day-report > div { display: flex; justify-content: space-around; align-items: center; width: 200px; height: 30px; background-color: #296CF2; border-radius: 3px;}
-.day-report > div > span {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.1);}
-.day-report > div .sat {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 50%; background-color: rgba(15, 56, 139, 0.7);}
-.day-report > div .sun {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 50%; background-color: rgba(255, 60, 0, 0.7);}
+
 
 .todo-and-memo-flex { display: flex; justify-content: space-between; width: 76.5%;}
 
@@ -47,6 +51,4 @@ ol { color: white; font-size: 17px;}
 .memo-part { width: 400px; display: flex; justify-content: center; align-items: center; background-color: #296CF2;}
 .memo-part textarea { font-size: 20px; padding:20px; border-radius: 2px; border-style: none; color:white; background-color:#296CF2; outline-style: none; }
 .memo-part textarea::placeholder { color:rgba(255, 255, 255, 0.8);}
-/* .memo-part textarea { font-size: 20px; padding:20px; border-radius: 2px; border-style: none; color:#5388f1; background-color: #030514; text-align: right;}
-.memo-part textarea::placeholder { color:rgba(255, 255, 255, 0.8);} */
 
