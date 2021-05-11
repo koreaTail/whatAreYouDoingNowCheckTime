@@ -4,6 +4,7 @@ const p = 시계위치.querySelector("p")
 const 초기화버튼 = document.querySelector(".초기화버튼")
 
 const 경과시간합모든아이 = document.querySelectorAll(".경과시간합")
+let day = "요일"
 
 // 로컬스토리지에 경과시간값이 없을 때, 초기값 0 넣어주기
 function setupId(id) {
@@ -102,13 +103,36 @@ function 현재시간() {
   }
 }
 
+// 요일 숫자에서 문자로 바꿔주기
+function todayDay() {
+  return new Date().getDay();
+}
+
+if (todayDay() == 1) {
+  day = "Mon";
+} else if (todayDay() == 2) {
+  day = "Tue";
+} else if (todayDay() == 3) {
+  day = "Wed";
+} else if (todayDay() == 4) {
+  day = "Thu";
+} else if (todayDay() == 5) {
+  day = "Fri";
+} else if (todayDay() == 6) {
+  day = "Sat";
+} else {
+  day = "Sun";
+}
+
+
+
 
 function 시계() {
   const 시 = new Date().getHours()
   const 분 = new Date().getMinutes()
   const 초 = new Date().getSeconds()
 
-  p.innerText = `${시}:${(분 < 10) ? `0${분}` : 분}:${(초 < 10) ? `0${초}` : 초
-    } `
+  p.innerText = `${day} ${시}:${(분 < 10) ? `0${분}` : 분}:${(초 < 10) ? `0${초}` : 초}`
 }
 setInterval(시계, 1000)
+
