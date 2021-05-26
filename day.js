@@ -31,7 +31,14 @@ function 시계() {
   const 분 = new Date().getMinutes()
   const 초 = new Date().getSeconds()
 
-  p.innerText = `${day} ${시}:${(분 < 10) ? `0${분}` : 분}:${(초 < 10) ? `0${초}` : 초}`
+  const nowTime = `${day} ${시}:${(분 < 10) ? `0${분}` : 분}:${(초 < 10) ? `0${초}` : 초}`
+  p.innerText = nowTime;
 }
 setInterval(시계, 1000)
 
+
+if (nowTime) {
+  console.log("성공")
+} else {
+  console.log("실패")
+}
