@@ -70,21 +70,36 @@ function btnHandler() {
     경과시간표시부.appendChild(li)
     li.appendChild(span)
     span.innerHTML = `${현재시간()} - `
+    span.classList.add(day)
   }
   else {
     const li = 해당섹션.querySelectorAll("li")
     const lastLi = li[li.length - 1]
     const span = document.createElement("span")
-    const span2 = document.createElement("span")
+    const em = document.createElement("em")
     lastLi.appendChild(span)
-    lastLi.appendChild(span2)
+    lastLi.appendChild(em)
     span.innerText = 현재시간();
     const 처음과끝시간 = lastLi.textContent;
-    const 경과시간 = (처음과끝시간.slice(8, 10) - 처음과끝시간.slice(0, 2)) * 60 + (처음과끝시간.slice(11, 13) - 처음과끝시간.slice(3, 5));
-    span2.innerText = ` (${경과시간}')`;
-    const 경과시간합 = 해당섹션.querySelector(".경과시간합")
-    경과시간합.innerText = parseInt(경과시간합.innerText) + parseInt(경과시간);
-    localStorage.setItem(해당섹션.id, 경과시간합.innerText)
+    span.classList.add(day)
+    const nodes = 경과시간표시부.querySelectorAll("span")
+    const last = nodes[nodes.length - 1]
+    const lastBefore = nodes[nodes.length - 2]
+    console.log(last.classList.value == lastBefore.classList.value) // 값이  true 면 같은 요일에 체크한거, 값이 false면 다른 요일에 체크한거.
+    if (last.classList.value == lastBefore.classList.value) {
+      const 경과시간 = (처음과끝시간.slice(8, 10) - 처음과끝시간.slice(0, 2)) * 60 + (처음과끝시간.slice(11, 13) - 처음과끝시간.slice(3, 5));
+      em.innerText = ` (${경과시간}')`;
+      const 경과시간합 = 해당섹션.querySelector(".경과시간합")
+      경과시간합.innerText = parseInt(경과시간합.innerText) + parseInt(경과시간);
+      localStorage.setItem(해당섹션.id, 경과시간합.innerText)
+    } else {
+      const 경과시간 = (24 - 처음과끝시간.slice(0, 2)) * 60 + (처음과끝시간.slice(11, 13) - 처음과끝시간.slice(3, 5));
+      em.innerText = ` (${경과시간}')`;
+      const 경과시간합 = 해당섹션.querySelector(".경과시간합")
+      경과시간합.innerText = parseInt(경과시간합.innerText) + parseInt(경과시간);
+      localStorage.setItem(해당섹션.id, 경과시간합.innerText)
+    }
+
   }
 }
 
@@ -102,6 +117,4 @@ function 현재시간() {
     return `${시}:${분}`;
   }
 }
-
-
 

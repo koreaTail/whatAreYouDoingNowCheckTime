@@ -1,6 +1,5 @@
 let day = "요일"
 const dayReport = document.querySelector(".day-report")
-console.log(dayReport)
 
 // 요일 숫자에서 문자로 바꿔주기
 function todayDay() {
@@ -23,9 +22,6 @@ if (todayDay() == 1) {
   day = "Sun";
 }
 
-
-
-
 function 시계() {
   const 시 = new Date().getHours()
   const 분 = new Date().getMinutes()
@@ -36,9 +32,3 @@ function 시계() {
 }
 setInterval(시계, 1000)
 
-
-if (nowTime) {
-  console.log("성공")
-} else {
-  console.log("실패")
-}
