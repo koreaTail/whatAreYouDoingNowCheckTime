@@ -3,52 +3,49 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto';}
 body{background-color: #030514;}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
-header { display: flex; justify-content: space-between; align-items: center; color: white; margin-bottom: 30px; font-size: 30px; margin-top: 30px; width: 77%;}
-.header-left { display: flex;}
-
-
-.day-style { display: flex; justify-content: space-around; align-items: center; width: 200px; height: 30px; color:white; background-color: #296CF2; border-radius: 3px; margin: 5px;}
-.day-style > span {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(255, 255, 255, 0.1); font-size: 12px;}
-.day-style > .sat {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(15, 56, 139, 0.7);}
-.day-style > .sun {display: flex; justify-content: center; align-items: center; width: 24px; height: 24px; border-radius: 20px; background-color: rgba(255, 60, 0, 0.7);}
-
+header { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: right; color: white; margin-bottom: 30px; font-size: 40px; margin-top: 30px; width: 77%;}
 
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 5px;}
-section { display: flex; justify-content: space-between; align-items: center; flex-direction: column; width: 200px; height: auto; background-color: #296CF2; margin: 5px; border-radius: 3px;}
-button { width: 180px; height: 50px; margin-top: 10px; margin-bottom: 10px; border-radius: 2px; border-style: none; background-color: black; color:white;}
+section { display: flex; justify-content:space-evenly; width: 600px; height: auto; background-color: #296CF2; padding: 5px; margin: 5px; border-radius: 3px;}
+button { width: 200px; height: 120px; margin-top: 10px; margin-bottom: 10px; border-radius: 2px; border-style: none; background-color: black; color:white; font-size: 25px;}
 button:hover { cursor: pointer; background-color: white; color: black;}
-p { color: white; font-size: 17px;}
-.경과시간flex span { color: white;  font-size: 17px;}
-ol { color: white; font-size: 17px; list-style: none;}
+p { color: white; font-size: 25px;}
+.경과시간flex span { color: white;  font-size: 30px;}
+ol { color: white; font-size: 25px; list-style: none;}
 .시계위치 { color: white;  display: flex; justify-content: center; align-items: center;}
 .시계위치 p { font-size: 2em; border-radius: 3px; padding: 10px; color: white;}
 .선택됨 { background-color: #F08F41;}
 .경과시간flex { display: flex; justify-content: center; align-items: center;}
 .초기화버튼 { width: 40px; height: 20px; background-color: #296CF2; color: #ffffff; margin-left: 10px; margin-top: 35px; font-size: 10px;}
 
+@media (max-width: 500px){
+  section {
+    width: 300px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+  }
+
+  button {
+    width: 270px;
+    margin-left: 10px;
+  }
+
+  .경과시간flex {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+  }
 
 
-.todo-and-memo-flex { display: flex; justify-content: space-between; width: 76.5%;}
+  ol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.todo-part { width: auto; background-color: #030514; margin-right: 50px;}
-.todo-part .black-box{ padding: 15px; height: 575px; width: 330px; background-color: #296CF2; border-radius: 8px;}
-.todo-part h4 { font-size: 25px; margin-bottom: 20px;}
-.todo-part .title { text-align: left; color: white;}
-.todo-part form { text-align: center;}
-.todo-part form .form-input { -webkit-appearance: none; -moz-appearance: none;  position: relative; margin-bottom: 20px; border-radius: 0; outline-style: none; line-height: normal; font-size: 20px; padding: 8.5px 0px; width: 300px; border: none; color: white; text-align: center; background-color: rgba(255, 255, 255, 0.3); border-radius: 15px; vertical-align: middle;}
-.todo-part form .form-input::placeholder { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: rgba(255, 255, 255, 0.4); font-size: 15px;}
-.todo-part ul { display: flex; flex-direction: column; align-items: center; padding: 0; height: 372px; overflow: auto;}
-.todo-part ul::-webkit-scrollbar { display: none;}
-.todo-part ul li { display: inline-block; margin-bottom: 15px;}
-.todo-part ul li .card-div { display: flex; justify-content: space-between; align-items: center; background-color: #030514; color: white; border-radius: 10px; width: 300px; min-height: 35px;}
-.todo-part ul li .card-div button { color: #296CF2; width: 34px; height: 34px; border-radius: 50%; border: none; background-color: rgba(255, 255, 255, 0);}
-.todo-part ul li .card-div button i { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;}
-.todo-part ul li .card-div .content { display: block; justify-content: left; padding: 5px 0px; font-size: 15px; width: 80%;}
-.todo-part ul .li-complite { background-color: rgba(0, 0, 0, 0.2); border-radius: 10px;}
-.todo-part ul .li-complite button { color: rgba(186, 220, 88, 0.2);}
-.todo-part ul .li-complite .content { text-decoration: line-through; color: rgba(255, 255, 255, 0.4); text-decoration-color: rgba(186, 220, 88, 0.5);}
 
-.memo-part { width: 400px; display: flex; justify-content: center; align-items: center; background-color: #296CF2;}
-.memo-part textarea { font-size: 20px; padding:20px; border-radius: 2px; border-style: none; color:white; background-color:#296CF2; outline-style: none; }
-.memo-part textarea::placeholder { color:rgba(255, 255, 255, 0.8);}
+}
 
