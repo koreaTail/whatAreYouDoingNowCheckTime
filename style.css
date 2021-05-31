@@ -3,7 +3,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto';}
 body{background-color: #030514;}
 .all { display: flex; flex-direction: column; justify-content: center; align-items: center;}
-header { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: right; color: white; margin-bottom: 30px; font-size: 40px; margin-top: 30px; width: 77%;}
+header { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: right; color: white; margin-top: 600px; margin-bottom: 30px; font-size: 40px; margin-top: 30px; width: 77%;}
 
 .section-flex {display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 5px;}
 section { display: flex; justify-content:space-evenly; width: 600px; height: auto; background-color: #296CF2; padding: 5px; margin: 5px; border-radius: 3px;}
